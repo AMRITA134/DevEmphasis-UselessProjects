@@ -21,25 +21,27 @@
 "For all you social misfits out there who’d rather dodge society and avoid the brain rot craze—introducing *Distonia: The Quiz!* It’s specially designed to ramp up your brain rot to a level you never thought possible, all from the comfort of your solitude! Say goodbye to thinking too hard and hello to peak mental mush! Finally, a quiz for those who prefer solitude... but won’t mind a bit of socially acceptable brain rot!"
 
 ## Technical Details
-### Technologies/Components Used
+### Technologies Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
-
-### Implementation
-For Software:
+- languages used:html,javascript
+- Framework used:CSS
 # Installation
-[commands]
+Step 1: Gather Your Visuals — It’s Quiz Time!
+Picture yourself as the mad scientist preparing the ultimate quiz! First, locate and download the essential image files: brain rot.jpeg and brain.gif. These brainy images are your secret ingredients to make the quiz come to life!
+
+🎨 Step 2: Set the Stage in VS Code
+Now, it’s time to place these visuals perfectly.
+
+Open your HTML in VS Code. This is your lab, and you’re the master operator.
+Copy the paths of brain rot.jpeg and brain.gif. Then, in your HTML file, find where these images belong, and paste the paths in the src attributes for each <img src=""> tag. Make sure they’re positioned just right to add some mystery to your quiz.
+🔥 Step 3: Open in Chrome — Quiz in Action!
+With your visuals in place, it’s time for the grand reveal. Open your HTML file in Chrome and hit refresh — the brainy quiz images should be exactly where you wanted them, ready to intrigue and entertain your quiz-takers.
+
+
 
 # Run
-[commands]
+ Unleash the Quiz
+You’re now moments away from activating the quiz. Double-click your HTML file or right-click and choose Open with > Chrome. This isn’t just a click; it’s like opening a treasure chest of brainy challenges!
 
 ### Project Documentation
 For Software:
