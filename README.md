@@ -47,14 +47,14 @@ You’re now moments away from activating the quiz. Double-click your HTML file 
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+https://1drv.ms/i/c/3428186727baf11b/ER3QWxKYLOdNrG9NJbx3qjcBcIErzquO03OLehLRN3APqw?e=4iWVWw
+this the front page of the quiz "Distonia".this is where the quiz begins by pressing "Start Qualifying Quiz"
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+https://1drv.ms/i/c/3428186727baf11b/EUwJKtRNV9BHjReyv_9-B2QBc9kXo6hmL25QdkJrmluMEA?e=Bqpkqz
+This is the page where the qualifying questios begin.these questions are for those who have less brain rot. 
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+https://1drv.ms/i/c/3428186727baf11b/EdDGxT0sgWhCus3du4Pe7WwBwmjBuR_IN-3GxUjEqfviUw?e=OD7K0t
+This is the page where the question for brain rot begins ,that is by reading the questions and the flashing of lights on the screen makes your brain hurt.
 ### Project Demo
 # Video
 https://www.kapwing.com/videos/671bb563ad420715d8cccb45
