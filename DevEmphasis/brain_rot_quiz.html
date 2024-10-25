@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Rot Quiz</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #FFDAB9; /* Default Peach color */
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            transition: background-color 0.5s ease; /* Smooth transition for background color */
+        }
+        #quiz-container, #result-container {
+            display: none;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        h1, h2 {
+            color: #FF5733;
+        }
+
+        /* Hypnotizing background effect */
+        @keyframes hypnotize {
+            0% { background-color: #FFDAB9; }
+            25% { background-color: #FF6F61; }
+            50% { background-color: #6A5ACD; }
+            75% { background-color: #FFD700; }
+            100% { background-color: #FFDAB9; }
+        }
+        
+        .hypnotizing {
+            animation: hypnotize 1ms infinite; /* Reduced duration to 4s for faster change */
+        }
+
+        /* Image styles */
+        .side-image {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 300px; /* Width set to 300px */
+            height: 400px; /* Height set to 400px */
+            display: none; /* Initially hidden */
+        }
+        .left-image {
+            left: 0;
+        }
+        .right-image {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Distonia</h1>
+<h2> you lose you start again</h2>
+<button onclick="startQualifyingQuiz()">Start Qualifying Quiz</button>
+
+<div id="quiz-container">
+    <h2 id="quiz-question"></h2>
+    <button onclick="selectAnswer(0)" id="answer0"></button>
+    <button onclick="selectAnswer(1)" id="answer1"></button>
+    <button onclick="selectAnswer(2)" id="answer2" style="display: none;"></button>
+    <button onclick="selectAnswer(3)" id="answer3" style="display: none;"></button>
+</div>
+
+<div id="result-container">
+    <h2 id="result-title"></h2>
+    <p id="result-message"></p>
+    <button id="next-button" onclick="goToBrainRotQuiz()" style="display:none;">Go to Brain Rot Quiz</button>
+    <button onclick="restartQuiz()">Restart</button>
+</div>
+
+<!-- Brain Rot Images -->
+<img src="C:\Users\Admin\Downloads\DevEmphasisUseless\DevEmphasis\brain.gif" alt="Brain Rot Left" class="side-image left-image" id="left-image">
+<img src="C:\Users\Admin\Downloads\DevEmphasisUseless\DevEmphasis\brain rot.jpeg" alt="Brain Rot Right" class="side-image right-image" id="right-image">
+
+<script>
+    const qualifyingQuestions = [
+        { question: "How long do you spend on social media?", answers: ["Less than an hour", "1-3 hours", "3-5 hours", "More than 5 hours"], correct: 0 },
+        { question: "Are you familiar with Gen Z slang?", answers: ["Not at all", "A little", "Pretty much", "I am Gen Z"], correct: 0 },
+        { question: "Do you frequently use TikTok?", answers: ["Never", "Occasionally", "Regularly", "I am a creator"], correct: 1 }
+    ];
+    
+    let currentQuestionIndex = 0;
+
+    function startQualifyingQuiz() {
+        currentQuestionIndex = 0;
+        document.getElementById('result-container').style.display = 'none';
+        document.getElementById('quiz-container').style.display = 'block';
+        
+        // Hide the "Start Qualifying Quiz" button
+        document.querySelector('button[onclick="startQualifyingQuiz()"]').style.display = 'none';
+        
+        showQualifyingQuestion();
+    }
+
+    function showQualifyingQuestion() {
+        const question = qualifyingQuestions[currentQuestionIndex];
+        document.getElementById('quiz-question').innerText = question.question;
+        document.getElementById('answer0').innerText = question.answers[0];
+        document.getElementById('answer1').innerText = question.answers[1];
+        document.getElementById('answer2').innerText = question.answers[2];
+        document.getElementById('answer3').innerText = question.answers[3];
+        
+        document.getElementById('answer2').style.display = question.answers.length > 2 ? 'inline-block' : 'none';
+        document.getElementById('answer3').style.display = question.answers.length > 3 ? 'inline-block' : 'none';
+
+        document.getElementById('answer0').onclick = () => selectAnswer(0);
+        document.getElementById('answer1').onclick = () => selectAnswer(1);
+        document.getElementById('answer2').onclick = () => selectAnswer(2);
+        document.getElementById('answer3').onclick = () => selectAnswer(3);
+    }
+
+    function selectAnswer(answerIndex) {
+        const currentQuestion = qualifyingQuestions[currentQuestionIndex];
+        if (answerIndex === currentQuestion.correct) {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < qualifyingQuestions.length) {
+                showQualifyingQuestion();
+            } else {
+                showResults("You are eligible for brain rot!");
+                document.getElementById('next-button').style.display = 'block';
+            }
+        } else {
+            showResults("You are not eligible for brain rot!");
+            document.getElementById('next-button').style.display = 'none';
+        }
+    }
+
+    function showResults(message) {
+        document.getElementById('quiz-container').style.display = 'none';
+        document.getElementById('result-container').style.display = 'block';
+        document.getElementById('result-title').innerText = message;
+    }
+
+    function goToBrainRotQuiz() {
+        document.getElementById('result-container').style.display = 'none';
+        document.body.classList.add('hypnotizing'); // Add hypnotizing class to body
+        startBrainRotQuiz();
+    }
+
+    const brainRotQuestions =[
+        { question: "You’re in Ohio trying to dodge the Fanum Tax, but your aura’s looking kinda beta. How do you level up to alpha status?", answers: ["Pull out a certified Sigma Face", "Hit the Skibidi dance at max speed", "Pull an Ohio-approved Rizz move", "Order a “slay” from the NPC cafeteria"], correct: 1 },
+        { question: "To truly be a Rizzler, you need to:", answers: ["Slay the Skibidi Toilet in a dance battle", "Master the Ohio Sigma walk", "Pay Fanum Tax in high-key Rizz energy", "Train under a legendary NPC in cornfields"], correct: 0 },
+        { question: "Your aura is cooked, and you’re losing Rizz fast. To get it back, do you:", answers: ["Slay the day with a double Rizz combo", "Summon the Skibidi Toilet for help", "Relocate to Ohio for max aura reset", "Pay the Fanum Tax in glitter Crocs"], correct: 3 },
+        { question: "You’re grinding Rizz points but keep getting Ohio-certified NPC energy. To go from beta to alpha, you need to:", answers: ["Do a Skibidi 360 spin while chugging Rizz juice", "Slay every NPC with a Sigma aura check", "Pay Fanum Tax in leftover vibes", "Chant 'Ohio Rizz' for max luck"], correct: 2 },
+        { question: "An NPC is testing your Rizz. To pass the vibe check, you:", answers: ["Hit them with the ultimate Skibidi combo", "Flex your alpha aura with a Fanum Tax receipt", "Offer a 'slay' as payment", "Hit them with a Sigma stare and Ohio-certified wink"], correct: 3 },
+        { question: "The Fanum Tax collector just showed up, and your Rizz is looking lowkey cooked. What’s the best escape route?", answers: ["Find the Ohio portal for instant exit", "Slay your way through with max Skibidi energy", "Pay the Fanum Tax in full Rizzler mode", "Hit a beta aura and blend in with the NPCs"], correct: 0 },
+        { question: "The ultimate Rizz battle is happening, and you’re up against the Skibidi Rizz King of Ohio. What’s your move?", answers: ["Hit them with an alpha aura Skibidi combo", "Bribe them with Fanum Tax receipts", "Slay them with your ultimate Sigma face", "Summon an NPC army to back you up"], correct: 0 },
+        { question: "You’ve got max alpha aura but only beta-level Rizz. To become a certified Rizzler, you:", answers: ["Pay double Fanum Tax to the Skibidi Council", "Practice your Sigma stare in Ohio", "Slay an NPC in a Rizz-off duel", "Buy a cooked aura upgrade at the NPC shop"], correct: 1 },
+        { question: "Your vibe’s slayin’, but suddenly you’re pulled into the Ohio Rizz Zone, where Skibidi is the only way out. What’s your plan?", answers: ["Activate Rizzler mode and vibe your way out", "Pay Fanum Tax in pure 'slay' currency", "Flex your aura and go full Sigma on the NPCs", "Skibidi dance like your life depends on it"], correct: 3 },
+        { question: "To reach true Skibidi Alpha status in Ohio, you must:", answers: ["Cook the perfect Rizz move in front of an NPC", "Complete the Fanum Tax challenge without flinching", "Slay every Ohio resident in a Rizz contest", "Summon your aura for a full Sigma transformation"], correct: 2 }
+    ];
+
+    let brainRotIndex = 0;
+    let aura = 0;
+
+    function startBrainRotQuiz() {
+        brainRotIndex = 0;
+        aura = 0;
+        document.getElementById('quiz-container').style.display = 'block';
+        showBrainRotQuestion();
+    }
+
+    function showBrainRotQuestion() {
+        const question = brainRotQuestions[brainRotIndex];
+        document.getElementById('quiz-question').innerText = question.question;
+        document.getElementById('answer0').innerText = question.answers[0];
+        document.getElementById('answer1').innerText = question.answers[1];
+        document.getElementById('answer2').innerText = question.answers[2];
+        document.getElementById('answer3').innerText = question.answers[3];
+
+        document.getElementById('answer2').style.display = 'inline-block';
+        document.getElementById('answer3').style.display = 'inline-block';
+
+        document.getElementById('answer0').onclick = () => selectBrainRotAnswer(0);
+        document.getElementById('answer1').onclick = () => selectBrainRotAnswer(1);
+        document.getElementById('answer2').onclick = () => selectBrainRotAnswer(2);
+        document.getElementById('answer3').onclick = () => selectBrainRotAnswer(3);
+    }
+
+    function selectBrainRotAnswer(answerIndex) {
+        const currentQuestion = brainRotQuestions[brainRotIndex];
+        if (answerIndex === currentQuestion.correct) {
+            aura += 10;
+            brainRotIndex++;
+            if (brainRotIndex < brainRotQuestions.length) {
+                showBrainRotQuestion();
+            } else {
+                showUltimateTitle();
+            }
+        } else {
+            showResults("You failed at brain rot!");
+        }
+    }
+
+    function showUltimateTitle() {
+        showResults(`Congratulations! You've earned the title: Ultimate Alpha Ohio Boss! Aura Score: ${aura}`);
+        // Show images on reaching congratulations
+        document.getElementById('left-image').style.display = 'block';
+        document.getElementById('right-image').style.display = 'block';
+    }
+
+    function restartQuiz() {
+        document.getElementById('result-container').style.display = 'none';
+        document.getElementById('quiz-container').style.display = 'none';
+        document.getElementById('left-image').style.display = 'none'; // Hide left image
+        document.getElementById('right-image').style.display = 'none'; // Hide right image
+        currentQuestionIndex = 0;
+        brainRotIndex = 0;
+        aura = 0;
+        document.body.classList.remove('hypnotizing'); // Remove hypnotizing class from body
+        document.querySelector('button[onclick="startQualifyingQuiz()"]').style.display = 'inline'; // Show the start button again
+    }
+</script>
+
+</body>
+</html>
