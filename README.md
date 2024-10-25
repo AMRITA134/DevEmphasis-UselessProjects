@@ -57,7 +57,7 @@ For Software:
 *Add caption explaining what this shows*
 ### Project Demo
 # Video
-https://github.com/user-attachments/assets/distonia.mp4"
+https://www.kapwing.com/videos/671bb563ad420715d8cccb45
 
 # Additional Demos
 [Add any extra demo materials/links]
