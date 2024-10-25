@@ -60,7 +60,7 @@ This is the page where the question for brain rot begins ,that is by reading the
 https://www.kapwing.com/videos/671bb563ad420715d8cccb45
 
 ## Team Contributions
-- Antony Rubens: Desbugging and editing
+- Antony Rubens: Debugging and editing
 - Adithyan K S: Debugging and editing 
 - Amrita Jyothi:Data collecting and editing 
 
