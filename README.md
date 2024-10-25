@@ -7,12 +7,12 @@
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead:Antony Rubens[AISAT]
+- Member 2: Adithyan K S[AISAT]
+- Member 3: Amrita Jyothi[AISAT]
 
 ### Project Description
-[2-3 lines about what your project does]
+"Welcome to the most unpredictable quiz game ever—a true test of your wit, patience, and maybe... your ability to handle chaos! Every answer you give? Well, let’s just say the results might surprise you (they definitely surprise us). Think you can still snag the top title? Honestly, we’re not even sure what it is! The rules seem to have a mind of their own, but hey, that’s part of the fun, right? Buckle up, because in this quiz, the only thing predictable is the unpredictability!"
 
 ### The Problem (that doesn't exist)
 [What ridiculous problem are you solving?]
