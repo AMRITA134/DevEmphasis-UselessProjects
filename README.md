@@ -57,7 +57,7 @@ For Software:
 *Add caption explaining what this shows*
 ### Project Demo
 # Video
-"C:\Users\Admin\Downloads\Untitled video - Made with Clipchamp.mp4"
+https://github.com/user-attachments/assets/distonia.mp4"
 
 # Additional Demos
 [Add any extra demo materials/links]
