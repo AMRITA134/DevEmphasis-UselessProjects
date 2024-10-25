@@ -59,13 +59,10 @@ This is the page where the question for brain rot begins ,that is by reading the
 # Video
 https://www.kapwing.com/videos/671bb563ad420715d8cccb45
 
-# Additional Demos
-[Add any extra demo materials/links]
-
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Antony Rubens: [Specific contributions]
+- Adithyan K S: [Specific contributions]
+- Amrita Jyothi: [Specific contributions]
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
