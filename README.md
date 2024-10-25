@@ -15,10 +15,10 @@
 "Welcome to the most unpredictable quiz game ever—a true test of your wit, patience, and maybe... your ability to handle chaos! Every answer you give? Well, let’s just say the results might surprise you (they definitely surprise us). Think you can still snag the top title? Honestly, we’re not even sure what it is! The rules seem to have a mind of their own, but hey, that’s part of the fun, right? Buckle up, because in this quiz, the only thing predictable is the unpredictability!"
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+"Welcome to a world where brain rot isn’t just a condition—it’s the new trend! In fact, accelerating everyone’s brain rot is practically essential for our 'futuristic' society. After all, who needs critical thinking when we’ve got endless scrolling and meme overload to lead us forward? The next generation is counting on us to perfect the art of mind mush. So join the movement, and let’s rot our way to the future!"
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+"For all you social misfits out there who’d rather dodge society and avoid the brain rot craze—introducing *Distonia: The Quiz!* It’s specially designed to ramp up your brain rot to a level you never thought possible, all from the comfort of your solitude! Say goodbye to thinking too hard and hello to peak mental mush! Finally, a quiz for those who prefer solitude... but won’t mind a bit of socially acceptable brain rot!"
 
 ## Technical Details
 ### Technologies/Components Used
