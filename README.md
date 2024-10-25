@@ -62,7 +62,7 @@ https://www.kapwing.com/videos/671bb563ad420715d8cccb45
 ## Team Contributions
 - Antony Rubens: [Specific contributions]
 - Adithyan K S: [Specific contributions]
-- Amrita Jyothi: [Specific contributions]
+- Amrita Jyothi:Data collecting and editing 
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
