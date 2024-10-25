@@ -33,7 +33,7 @@ Picture yourself as the mad scientist preparing the ultimate quiz! First, locate
 Now, it’s time to place these visuals perfectly.
 
 Open your HTML in VS Code. This is your lab, and you’re the master operator.
-Copy the paths of brain rot.jpeg and brain.gif. Then, in your HTML file, find where these images belong, and paste the paths in the src attributes for each <img src=""> tag. Make sure they’re positioned just right to add some mystery to your quiz.
+Copy the paths of brain rot.jpeg and brain.gif. Then, in your HTML file, find where these images belong, and paste the paths in the src attributes for each img src tag. Make sure they’re positioned just right to add some mystery to your quiz.
 🔥 Step 3: Open in Chrome — Quiz in Action!
 With your visuals in place, it’s time for the grand reveal. Open your HTML file in Chrome and hit refresh — the brainy quiz images should be exactly where you wanted them, ready to intrigue and entertain your quiz-takers.
 
