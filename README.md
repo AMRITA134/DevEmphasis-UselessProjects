@@ -43,10 +43,8 @@ With your visuals in place, it’s time for the grand reveal. Open your HTML fil
  Unleash the Quiz
 You’re now moments away from activating the quiz. Double-click your HTML file or right-click and choose Open with > Chrome. This isn’t just a click; it’s like opening a treasure chest of brainy challenges!
 
-### Project Documentation
-For Software:
 
-# Screenshots (Add at least 3)
+# Screenshots 
 https://1drv.ms/i/c/3428186727baf11b/ER3QWxKYLOdNrG9NJbx3qjcBcIErzquO03OLehLRN3APqw?e=4iWVWw
 this the front page of the quiz "Distonia".this is where the quiz begins by pressing "Start Qualifying Quiz"
 
