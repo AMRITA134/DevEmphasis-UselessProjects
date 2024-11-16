@@ -55,7 +55,7 @@ https://1drv.ms/i/c/3428186727baf11b/EdDGxT0sgWhCus3du4Pe7WwBwmjBuR_IN-3GxUjEqfv
 This is the page where the question for brain rot begins ,that is by reading the questions and the flashing of lights on the screen makes your brain hurt.
 ### Project Demo
 # Video
-https://www.kapwing.com/videos/671bb563ad420715d8cccb45
+https://drive.google.com/file/d/1WlEaISD1QnEpiqxh-6rYXlQ1QRwNPX0v/view?usp=sharing
 
 ## Team Contributions
 - Antony Rubens: Debugging and editing
